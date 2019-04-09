@@ -1,0 +1,21 @@
+<div class="col-md-6 mx-auto container">
+  <div class="card">
+    <h2 class="card-header">Login to Account</h2>
+    <div class="card-body">
+      <form class="form">
+        <div class="form-group">
+          <label for="">Email</label>
+          <input [(ngModel)]="userData.email" name="email" class="form-control rounded-2" type="text" required>
+        </div>
+        <div class="form-group">
+          <label for="">Password</label>
+          <input [(ngModel)]="userData.password" name="password" class="form-control rounded-2" type="text" required>
+        </div>
+        <button (click)="loginUser()" type="button" class="btn btn-primary">Login</button>
+        <div >
+          <a [routerLink]="['/register']">Create Account</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
